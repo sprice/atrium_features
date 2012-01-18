@@ -122,7 +122,7 @@ function atrium_members_menu_alter(&$items) {
  */
 function atrium_members_addform_access() {
   $space = module_exists('spaces') ? spaces_get_space() : FALSE;
-  return user_access('create users') && $space && $space->type == 'og';
+  return user_access('create users');
 }
 
 /**
