@@ -385,8 +385,8 @@ class AtriumWebTestCase extends DrupalWebTestCase {
     // for this page load.
     // @TODO: Do we need to do this for Spaces too?
     if (module_exists('strongarm')) {
-      strongarm_set_conf(TRUE);
-      $_GET['q'] = strongarm_language_strip($_REQUEST['q']);
+      //strongarm_set_conf(TRUE);
+      //$_GET['q'] = strongarm_language_strip($_REQUEST['q']);
       drupal_init_path();
     }
   }
